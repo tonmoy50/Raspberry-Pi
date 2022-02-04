@@ -36,3 +36,19 @@ After this run,
 
 `sudo raspi-config`
 and from the window turn on wait for network on boot option from network
+
+# Python Virtual Environment Setup
+To install python3-venv in the raspberry pi system,
+`sudo apt-get install python3-venv -y`
+
+To create an virtual environment,
+`python3 -m venv ~/my_venv`
+
+To activate virtual environment,
+`source ~/my_venv/bin/activate`
+
+To test virtual environment has been activated or not,
+
+`which python`
+
+`which pip`

@@ -16,6 +16,24 @@ Installing IDE from terminal
 
 `/usr/bin/chromium-browser --kiosk  "my web address"`
 
+## Run a script on Startup
+
+Open rc.local,
+
+`sudo nano /etc/rc.local`
+
+add command,
+
+`python sample.py`
+
+Make rc.local executable
+
+`sudo chmod +x /etc/rc.local`
+
+To make boot not wait for running the script,
+
+`python sample.py &`
+
 ### Open an HTML page on Chromium startup
 
 open the following page,

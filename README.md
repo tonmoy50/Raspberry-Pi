@@ -70,3 +70,16 @@ To test virtual environment has been activated or not,
 `which python`
 
 `which pip`
+
+# Auto start nodejs server on boot
+
+install pm2 using, `npm install pm2 -g`
+
+startup pm2 on boot using, `pm2 startup`
+This will prompt you to add service to systemd if detected. It will also guide you to add pm2 as a service.
+
+start node server using pm2, `pm2 start "yarn run watch" --name project_name`
+
+save the server for starting on boot, `pm2 save`
+
+list running server, `pm2 list` 
